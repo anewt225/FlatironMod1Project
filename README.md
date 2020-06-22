@@ -8,10 +8,11 @@ Tasked with the project of finding and analyzing data to guide Microsoft's poten
 ***
 
 ### Repository Navigation
-Data
-Visualizations
-Presentation
-Notebook
+[Data](zippedData)
+[Visualizations](Visualizations) 
+[Presentation](Presentation/presentation.pdf)
+[Notebook](MicrosoftMovies.ipynb)
+
 
 ### ReadMe Navigation
 
@@ -46,22 +47,22 @@ Focusing on budget data and rating data from IMDB, we used three datasets: "IMDB
 
 I started with several visualizations to gain a general sense of what the data demonstrated:
 
-![AverageRating%20vs%20NumVotes.png](attachment:AverageRating%20vs%20NumVotes.png)
+![AverageRating%20vs%20NumVotes.png](Visualizations/AverageRating%20vs%20NumVotes.png)
 
 
 This first visualization allowed us to narrow down our analysis to movies with an average rating of 7 or higher. 
 
 Seaborn in python required cleaner data in order to generate effective visualizations, so I created bins of average ratings at intervals of .5, and then produced overall visualizations of the data to see if we could glean any information from them:
 
-![HighestRated%20pairplot.png](attachment:HighestRated%20pairplot.png)
+![HighestRated%20pairplot.png](Visualizations/HighestRated%20pairplot.png)
 
 After a touch more cleanup, I noticed more trends in the data which drew me back to the analysis of the business questions: optimal runtime and optimal budget based on ratings. Using boxplots was the most effective way to demonstrate range:
 
-![Runtime%20Range%20vs%20Ratings%20Visualization.png](attachment:Runtime%20Range%20vs%20Ratings%20Visualization.png)
+![Runtime%20Range%20vs%20Ratings%20Visualization.png](Visualizations/Runtime%20Range%20vs%20Ratings%20Visualization.png)
 
 
 
-![Budget%20Range%20vs%20Ratings%20Visualization.png](attachment:Budget%20Range%20vs%20Ratings%20Visualization.png)
+![Budget%20Range%20vs%20Ratings%20Visualization.png](Visualizations/Budget%20Range%20vs%20Ratings%20Visualization.png)
 
 I initially anticipated this to be a quick, one number recommendation. However, analyzing these two visualizations showed patterns by certain groupings. Given the data left out and the myriad caveats along the way, I decided to provide the Microsoft decision making team with more flexibility by providing them with options.
 
